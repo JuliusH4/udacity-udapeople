@@ -4,7 +4,6 @@ jobs:
   build-frontend:
     docker:
       - image: circleci/node:13.8.0
-    executor: docker
     steps:
       - run:
           name: Build front-end
@@ -16,7 +15,6 @@ jobs:
   build-backend:
     docker:
       - image: circleci/node:13.8.0
-    executor: docker
     steps:
       - checkout
       - run:
