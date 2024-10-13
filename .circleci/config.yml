@@ -3,7 +3,7 @@ version: 2.1
 jobs:
   build-frontend:
     docker:
-      - image: cimg/node:20.18.0
+      - image: cimg/node:13.8.0
     steps:
       - checkout
       - run:
@@ -27,7 +27,7 @@ jobs:
 
   test-frontend:
     docker:
-      - image: cimg/node:20.18.0
+      - image: cimg/node:13.8.0
     steps:
       - checkout
       - run:
